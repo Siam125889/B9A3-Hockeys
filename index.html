@@ -22,6 +22,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "hockey-primary": "#FF4240",
             },
           },
         },
@@ -34,8 +35,178 @@
     </style>
   </head>
   <body>
-    <header class="mt-14 w-11/12 lg:w-10/12"></header>
-    <main class="w-11/12 lg:w-10/12"></main>
+    <!-- header -->
+
+    <header class="mt-12 w-11/12 lg:w-10/12 mx-auto">
+      <!-- navbar part -->
+
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a class="text-hockey-primary"> Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold"
+              >Hockey <span class="text-hockey-primary">’</span> s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-hockey-primary">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn font-bold bg-hockey-primary text-white">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner -->
+
+      <div class="carousel w-full mt-12">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex gap-6 left-5 bottom-5">
+            <a
+              href="#slide2"
+              class="btn btn-circle text-white border-none bg-[#131318]"
+              >❮</a
+            >
+            <a
+              href="#slide2"
+              class="btn btn-circle text-white border-none bg-[#131318]"
+              >❯</a
+            >
+          </div>
+        </div>
+
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/img2.jpg" class="w-full" />
+          <div class="absolute flex gap-6 left-5 bottom-5">
+            <a
+              href="#slide1"
+              class="btn btn-circle text-white border-none bg-[#131318]"
+              >❮</a
+            >
+            <a
+              href="#slide1"
+              class="btn btn-circle text-white border-none bg-[#131318]"
+              >❯</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- banner-text -->
+      <div class="p-8 space-y-6 text-white bg-[#131318] rounded-xl">
+        <h3 class="font-extrabold text-xl lg:text-2xl">
+          Meet all the heroes from the field
+        </h3>
+        <p class="text-[#FFFFFF99]">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </div>
+    </header>
+    <main class="w-11/12 lg:w-10/12 mx-auto">
+      <!-- professional-section -->
+
+      <section
+        class="mt-16 lg:mt-30 mb-6 pt-8 border-t border-dashed border-gray-600"
+      >
+        <h2 class="mb-6 text-center font-extrabold text-2xl lg:text-4xl">
+          Professional Hockeys Club
+        </h2>
+        <p
+          class="text-center text-gray-500 pb-6 border-b border-dashed border-gray-600"
+        >
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+        <div class="flex flex-col lg:flex-row mt-10">
+          <div class="space-y-4 text-center p-4">
+            <div
+              class="radial-progress text-primary"
+              style="--value: 87"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <h3 class="font-semibold text-xl">Prayer Facility</h3>
+            <p class="text-gray-500">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="space-y-4 text-center p-4">
+            <div
+              class="radial-progress text-primary"
+              style="--value: 95"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <h3 class="font-semibold text-xl">Prayer Facility</h3>
+            <p class="text-gray-500">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="space-y-4 text-center p-4">
+            <div
+              class="radial-progress text-primary"
+              style="--value: 90"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <h3 class="font-semibold text-xl">Prayer Facility</h3>
+            <p class="text-gray-500">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="space-y-4 text-center p-4">
+            <div
+              class="radial-progress text-primary"
+              style="--value: 80"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <h3 class="font-semibold text-xl">Prayer Facility</h3>
+            <p class="text-gray-500">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
