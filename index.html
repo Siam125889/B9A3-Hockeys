@@ -41,7 +41,7 @@
   <body class="font-manrope">
     <!-- header -->
 
-    <header class="mt-12 w-11/12 lg:w-10/12 mx-auto">
+    <header class="mt-8 w-11/12 lg:w-10/12 mx-auto">
       <!-- navbar part -->
 
       <nav>
@@ -96,9 +96,24 @@
 
       <!-- banner -->
 
-      <div class="carousel w-full mt-12">
+      <div class="carousel w-full mt-8">
         <div id="slide1" class="carousel-item relative w-full">
-          <img src="Images/1.png" class="w-full" />
+          <!-- <img src="Images/1.png" class="w-full" /> -->
+          <div
+            class="relative rounded-xl w-full h-11/12 bg-[url('images/1.png')] bg-cover bg-center"
+          >
+            <div
+              class="absolute bottom-5 right-5 w-3/5 lg:block md:hidden hidden p-8 space-y-6 text-white bg-[#131318] rounded-xl"
+            >
+              <h3 class="font-extrabold text-xl lg:text-2xl">
+                Meet all the heroes from the field
+              </h3>
+              <p class="text-[#FFFFFF99]">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
           <div class="absolute flex gap-6 left-5 bottom-5">
             <a
               href="#slide2"
@@ -115,6 +130,7 @@
 
         <div id="slide2" class="carousel-item relative w-full">
           <img src="Images/img2.jpg" class="w-full rounded-xl" />
+
           <div class="absolute flex gap-6 left-5 bottom-5">
             <a
               href="#slide1"
@@ -130,7 +146,7 @@
         </div>
       </div>
       <!-- banner-text -->
-      <div class="p-8 space-y-6 text-white bg-[#131318] rounded-xl">
+      <div class="lg:hidden p-8 space-y-6 text-white bg-[#131318] rounded-xl">
         <h3 class="font-extrabold text-xl lg:text-2xl">
           Meet all the heroes from the field
         </h3>
@@ -162,7 +178,7 @@
               style="--value: 87"
               role="progressbar"
             >
-              87%
+              <span class="text-black">87%</span>
             </div>
             <h3 class="font-semibold text-xl">Experienced Coach</h3>
             <p class="text-gray-500">
@@ -175,7 +191,7 @@
               style="--value: 95"
               role="progressbar"
             >
-              95%
+              <span class="text-black">95%</span>
             </div>
             <h3 class="font-semibold text-xl">Senior Player</h3>
             <p class="text-gray-500">
@@ -188,7 +204,7 @@
               style="--value: 90"
               role="progressbar"
             >
-              90%
+              <span class="text-black">90%</span>
             </div>
             <h3 class="font-semibold text-xl">Training Ground</h3>
             <p class="text-gray-500">
@@ -201,7 +217,7 @@
               style="--value: 80"
               role="progressbar"
             >
-              80%
+              <span class="text-black">80%</span>
             </div>
             <h3 class="font-semibold text-xl">Prayer Facility</h3>
             <p class="text-gray-500">
@@ -235,7 +251,9 @@
               enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
               morbi nulla. Tortor congue sed et in.
             </p>
-            <button class="btn font-bold bg-hockey-primary text-white">
+            <button
+              class="btn border-none font-bold bg-hockey-primary text-white"
+            >
               Register Now!
             </button>
           </div>
@@ -248,7 +266,9 @@
               enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
               morbi nulla. Tortor congue sed et in.
             </p>
-            <button class="btn font-bold bg-hockey-primary text-white">
+            <button
+              class="border-none btn font-bold bg-hockey-primary text-white"
+            >
               Register Now!
             </button>
           </div>
@@ -263,7 +283,9 @@
               enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
               morbi nulla. Tortor congue sed et in.
             </p>
-            <button class="btn font-bold bg-hockey-primary text-white">
+            <button
+              class="btn border-none font-bold bg-hockey-primary text-white"
+            >
               Register Now!
             </button>
           </div>
@@ -624,13 +646,13 @@
             </div>
             <div class="p-4 bg-[#FDDD5F1A] rounded-xl">
               <img class="mb-2" src="Images/Group2.png" alt="" />
-              <p class="mb-1 text-gray-500">Phone Number :</p>
-              <p class="font-extrabold">(+62) 123-321-543</p>
+              <p class="mb-1 text-gray-500">Email :</p>
+              <p class="font-extrabold">hockeys@support.com</p>
             </div>
             <div class="p-4 bg-[#629CF31A] rounded-xl">
               <img class="mb-2" src="Images/Group3.png" alt="" />
-              <p class="mb-1 text-gray-500">Phone Number :</p>
-              <p class="font-extrabold">(+62) 123-321-543</p>
+              <p class="mb-1 text-gray-500">Location :</p>
+              <p class="font-extrabold">152/1 Mohakhali Wireless Gate</p>
             </div>
           </div>
           <div
@@ -702,6 +724,43 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer
+      class="text-center lg:text-left lg:justify-between justify-center mt-20 footer p-20 bg-[#131318] text-[#FFFFFF99]"
+    >
+      <aside>
+        <h2 class="text-3xl font-extrabold text-white">Get In Touch</h2>
+        <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+        <div class="flex items-center gap-2">
+          <i class="fa-regular fa-envelope text-hockey-primary"></i>
+          <p>hockeys@support.com</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-phone text-hockey-primary"></i>
+          <p>(+62) 123-321-543</p>
+        </div>
+      </aside>
+      <div class="flex gap-10 lg:gap-60 justify-between">
+        <nav class="flex-1 flex flex-col gap-2">
+          <header class="footer-title text-white">Services</header>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav class="flex-1 flex flex-col gap-2">
+          <header class="footer-title text-white">Company</header>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+      </div>
+      <nav>
+        <header class="footer-title text-white">Legal</header>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
   </body>
 </html>
